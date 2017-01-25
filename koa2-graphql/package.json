@@ -1,0 +1,23 @@
+{
+  "name": "sns",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "laiso",
+  "license": "MIT",
+  "dependencies": {
+    "kcors": "^2.x",
+    "koa": "^2.x",
+    "koa-router": "next",
+    "postgraphql": "^2.5.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.22.0",
+    "babel-preset-es2015-node": "^6.1.1",
+    "babel-register": "^6.22.0",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "start": "node -r babel-register ./app.js",
+    "watch": "nodemon --exec npm run start"
+  }
+}
